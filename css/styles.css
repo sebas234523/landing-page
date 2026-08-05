@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
+body {
     background-color: rgba(255, 235, 120, 0.774);
 }
 
-
 html {
-  scroll-behavior: smooth;
-
+    scroll-behavior: smooth;
 }
 
-.contenedor{
+
+.contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,45 +22,43 @@ html {
     background-color: white;
 }
 
-.img-logo img{
+.img-logo img {
     width: 150px;
     height: auto;
-    align-items: center;
-    justify-content: center;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-ul a{
+ul a {
     text-decoration: none;
 }
 
-.boton-header{
+.boton-header {
     border-radius: 20px;
     border: 2px solid;
     background-color: transparent;
     overflow: hidden;
 }
 
-.boton-header a{
+.boton-header a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: black;
-    transition: background-color 0.5s ease ;
+    transition: background-color 0.5s ease;
     font-size: 20px;
 }
 
-.boton-header a:hover{
+.boton-header a:hover {
     background-color: rgb(245, 255, 111);
 }
 
 
-.hero{
+.hero {
     background-image: url(/img/bakery-hero.jpg);
     width: 100%;
     height: 1000px;
@@ -69,7 +66,7 @@ ul a{
     padding: 100px;
 }
 
-.contenido-hero{
+.contenido-hero {
     display: flex;
     flex-direction: column;
     color: white;
@@ -79,16 +76,15 @@ ul a{
     gap: 30px;
 }
 
-.contenido-hero h1{
+.contenido-hero h1 {
     font-size: 50px;
-
 }
 
-.contenido-hero p{
+.contenido-hero p {
     font-size: 15px;
 }
 
-.cta{
+.cta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,25 +95,24 @@ ul a{
     overflow: hidden;
 }
 
-.cta a{
+.cta a {
     display: flex;
     width: 100%;
     color: white;
     text-decoration: none;
     font-size: 20px;
-    padding: 20px;
     justify-content: center;
     align-items: center;
     transition: background-color 0.5s ease;
     padding: 10px 30px;
-
 }
 
-.cta a:hover{
+.cta a:hover {
     background-color: rgb(13, 14, 13);
 }
 
-.contenedor-sweets{
+
+.contenedor-sweets {
     position: relative;
     flex-direction: column;
     background-image: url(/img/tarjetas-sweets.jpg);
@@ -127,7 +122,14 @@ ul a{
     padding: 50px;
 }
 
-.bloque-tarjetas{
+.titulo-sweets {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.bloque-tarjetas {
     display: flex;
     justify-content: space-between; 
     gap: 10px;
@@ -137,8 +139,7 @@ ul a{
     border-radius: 20px;
 }
 
-
-.bloque-tarjetas ul{
+.bloque-tarjetas ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -147,7 +148,8 @@ ul a{
     gap: 20px;
 }
 
-.bloque-tarjetas h2{
+
+.bloque-tarjetas h3 {
     padding: 0;
     margin: 0;
     display: flex;
@@ -163,14 +165,9 @@ ul a{
     margin-right: 8px; 
 }
 
-.titulo-sweets{
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding-top: 50px;
-}
-
-.contenido-cookies {
+.contenido-cookies,
+.contenido-scones,
+.contenido-other {
     display: flex;
     flex-direction: column;
     background-color: beige;
@@ -181,49 +178,7 @@ ul a{
 }
 
 
-.contenido-scones{
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
-    width: 320px; 
-}
-
-.contenido-other{
-    display: flex;
-    flex-direction: column;
-    background-color: beige;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
-    width: 320px; 
-}
-
-
-.bloque-img{
-    display: flex;
-    height: 250px;
-    width: 250px;
-    border-radius: 20px;
-    background-color: aqua;
-    overflow: hidden;
-}
-
-.bloque-img img{
-    display: flex;
-     height: 250px;
-    width: 250px;
-    border-radius: 20px;
-    background-color: aqua;
-    overflow: hidden;
-    object-fit: cover;
-}
-
-
-
-.titulo-ourbread{
+.titulo-ourbread {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +186,7 @@ ul a{
     color: rgb(71, 71, 71);
 }
 
-.bloque-compra{
+.bloque-compra {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 300px);
@@ -242,7 +197,7 @@ ul a{
 }
 
 
-.bloque1{
+.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6 {
     width: 100%;
     height: 500px;
     background-color: white;
@@ -253,62 +208,42 @@ ul a{
     border-radius: 20px;
 }
 
-.bloque2{
-    width: 100%;
-    height: 500px;
-    background-color: white;
+.bloque-img {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
+    background-color: aqua;
+    overflow: hidden;
+    margin: 0;
 }
 
-.bloque3{
-    width: 100%;
-    height: 500px;
-    background-color: white;
+.bloque-img img {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px;
+    height: 250px;
+    width: 250px;
     border-radius: 20px;
+    background-color: aqua;
+    overflow: hidden;
+    object-fit: cover;
 }
 
-.bloque4{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px;
-    border-radius: 20px;
+
+.bloque-compra h3 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.bloque5{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px;
-    border-radius: 20px;
+.bloque-compra span {
+    font-size: 25px;
+    color: orange;
 }
 
-.bloque6{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 25px;
-    border-radius: 20px;
+.bloque-compra p {
+    font-size: 15px;
 }
 
-.bloque-compra a{
+.bloque-compra a {
     display: flex;
     width: 150px;
     height: 50px;
@@ -316,7 +251,6 @@ ul a{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: orange;
     border-radius: 50px;
     overflow: hidden;
     color: white;
@@ -327,22 +261,6 @@ ul a{
     background-color: black;
 }
 
-
-.bloque-compra a:hover{
-    background-color:   rgb(152, 200, 206);
-}
-
-.bloque-compra span{
-    font-size: 25px;
-    color: orange;
-}
-
-.bloque-compra h2{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.bloque-compra p{
-    font-size: 15px;
-
+.bloque-compra a:hover {
+    background-color: rgb(152, 200, 206);
 }
