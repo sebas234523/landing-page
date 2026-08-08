@@ -113,7 +113,6 @@ ul a {
 
 
 .contenedor-sweets {
-    position: relative;
     flex-direction: column;
     background-image: url(/img/tarjetas-sweets.jpg);
     background-position: center;
@@ -263,4 +262,47 @@ ul a {
 
 .bloque-compra a:hover {
     background-color: rgb(152, 200, 206);
+}
+
+footer{
+    background-color: black;
+    padding: 30px;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact{
+    color: white;
+    font-size: 4vh;
+
+}
+
+.datos{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.datos li{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datos li svg{
+    margin-top: 16px;
+}
+
+.datos ul li a{
+    color: white;
+}
+
+.datos ul li a:hover{
+    color:orange;
+    text-decoration: underline;
 }
