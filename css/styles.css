@@ -1,21 +1,22 @@
-:root{
+:root {
     --primary-main-color: #262624;
-    --secondary-main-color: 	#1E1E1C;
+    --secondary-main-color: #1E1E1C;
     --secondary--card-color: #141413;
     --secondary-color: #ff6600ff;
     --primary-text-color: #e3e3e3;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: var(--primary-main-color);
     overflow-x: hidden;
@@ -25,26 +26,28 @@ body {
 
 
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.contenedor {
+.contenedor-header {
     display: flex;
     position: fixed;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-right: 15px;
     background-color: var(--secondary-main-color);
+    background-color: #262624b6 ;
     flex-wrap: wrap;
     gap: 5px;
     width: 100%;
 }
 
 .img-logo img {
-    width: 80px;
+    width: 60px;
     height: auto;
+    justify-self: center;
 }
 
 nav ul {
@@ -69,24 +72,25 @@ ul a {
 
 .boton-header a {
     display: block;
-    padding: 8px 16px; 
+    padding: 8px 16px;
     text-decoration: none;
-    color: black;
+    color: var(--secondary-card-color);
     transition: background-color 0.5s ease;
     font-size: 16px;
 }
 
 .boton-header a:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary--card-color);
 }
 
 
 .hero {
-    background-image: url(/img/bakery-hero.jpg);
+    /* agregar imagen a futuro  */
+    background-image: url(../img/pizzeria/hero-pizzery-img.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 40px 20px;
     display: flex;
     align-items: center;
@@ -103,6 +107,7 @@ ul a {
     justify-content: center;
     text-align: center;
     gap: 20px;
+    text-shadow: black 2px 2px 15px;
 }
 
 .contenido-hero h1 {
@@ -111,6 +116,7 @@ ul a {
 
 .contenido-hero p {
     font-size: 15px;
+    
 }
 
 .cta {
@@ -173,7 +179,7 @@ ul a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
+
 }
 
 
@@ -182,10 +188,10 @@ ul a {
 }
 
 .bloque-tarjetas li::before {
-    content: "— "; 
-    color: var(--secondary-color); 
+    content: "— ";
+    color: var(--secondary-color);
     font-weight: bold;
-    margin-right: 8px; 
+    margin-right: 8px;
 }
 
 .contenido-cookies,
@@ -197,13 +203,13 @@ ul a {
     padding: 30px;
     color: var(--primary-text-color);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
-    max-width: 320px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 320px;
     width: 100%;
 }
 
 
-.titulo-ourbread {
+.titulo-hamburguesa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +229,12 @@ ul a {
 }
 
 
-.bloque1, .bloque2, .bloque3, .bloque4, .bloque5, .bloque6 {
+.bloque1,
+.bloque2,
+.bloque3,
+.bloque4,
+.bloque5,
+.bloque6 {
     width: 100%;
     height: auto;
     background-color: var(--secondary--card-color);
@@ -264,7 +275,7 @@ ul a {
 .bloque-compra p {
     font-size: 15px;
     line-height: 1.4;
-    
+
 }
 
 
@@ -291,7 +302,7 @@ ul a {
     background-color: rgb(152, 200, 206);
 }
 
-footer{
+footer {
     display: flex;
     padding: 30px 15px;
     width: 100%;
@@ -299,27 +310,27 @@ footer{
     overflow: hidden;
 }
 
-.footer-logo{
+.footer-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.footer-logo img{
+.footer-logo img {
     max-width: 180px;
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.footer-contact{
+.footer-contact {
     color: white;
     font-size: 24px;
     text-align: center;
 }
 
-.datos{
+.datos {
     padding: 10px;
     width: 100%;
     display: flex;
@@ -327,13 +338,13 @@ footer{
     align-items: center;
 }
 
-.datos ul{
+.datos ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.datos li{
+.datos li {
     color: white;
     display: flex;
     gap: 10px;
@@ -343,29 +354,29 @@ footer{
 }
 
 
-.datos ul li a{
+.datos ul li a {
     color: white;
     text-decoration: none;
 }
 
-.datos ul li a:hover{
-    color:orange;
+.datos ul li a:hover {
+    color: orange;
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    .contenedor{
+    .contenedor {
         flex-direction: column;
         text-align: center;
         height: 10%;
         width: auto;
     }
 
-    nav ul{
+    nav ul {
         justify-content: center;
     }
 
-    .bloque-compra a{
+    .bloque-compra a {
         max-width: 100%;
     }
 }
